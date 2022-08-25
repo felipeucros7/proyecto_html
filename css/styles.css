@@ -1,7 +1,14 @@
+:root {
+    --colorPrincipal: #1098ad;
+    --colorSecundario: #444;
+    --tamFuente: 18px;
+    --tipoFuente: sans-serif;
+}
 body {
-    margin: 0 auto;
-    border: solid red 1px;
-    width: 960px;
+  border-top: solid 10px var(--color);
+  font-size: var(--tamFuente);
+  font-family: var(--tipoFuente);
+  color:  var(--colorSecundario);
 }
 h1 {
     font-size: 28px;
@@ -10,3 +17,70 @@ h1 {
     font-style: italic;
     color: #1098ad;
 }
+h1::first-letter{
+    font-style: normal;
+}
+nav a {
+    display: inline-block;
+    margin-right: 10px;
+}
+nav a:last-child{
+    margin-right: 0;
+}
+a:link {
+    color: var(--colorPrincipal);
+    text-decoration: none;
+}
+a:hover {
+    color:red;
+    font-weight: bold;
+    border-bottom: 1px solid red;
+}
+.main-header {
+    padding: 20px 40px;
+}
+header h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: var(--colorPrincipal)
+}
+#imagen-persona{
+    width: 50px;
+    height: 50px;
+}
+#autor {
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+#imagen-grande {
+    width: 100%;
+    height: auto;
+}
+p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+
+}
+h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom:40px;
+    color: var(--colorPrincipal);
+}
+ol li{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+li:first-child {
+    font-weight: bold;
+}
+ul li:last-child {
+    font-style: italic;
+}
+ul li:last-child span{
+    font-style: normal;
+}
+
